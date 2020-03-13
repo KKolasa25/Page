@@ -1,0 +1,108 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* NAVIGATION */
+.logo {
+  margin: 0px 0 0px 80px; 
+  font-family: 'Tangerine';
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 50%;
+}
+
+.navigation ul {
+  margin-right: 34px;
+  margin-left: 34px;
+  padding:0;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 38px;
+  margin-top: 10px;
+}
+
+.navigation ul li a  {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION 
+.logo {
+  margin: 16px 0 16px 0; 
+}
+
+.navigation .container {
+  display: flex;
+  padding: 0;
+  margin: 30px auto 30px auto;
+  justify-content: space-between;
+}
+
+.navigation .container ul {
+  display: flex;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a, .logo a {
+  text-decoration: none;
+}
+
+.navigation ul li ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+.navigation .container ul li ul {
+ display: none;
+ position: absolute;
+ padding-top: 10px;
+}
+
+.navigation .container ul li {
+  margin-right: 26px;
+}
+
+.navigation .container li:hover ul {
+  display: flex;    
+}
+*/
