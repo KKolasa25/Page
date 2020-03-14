@@ -1,108 +1,109 @@
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+  
 body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
 }
-
+  
 .container {
-  max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
-
+  
 /* NAVIGATION */
 .logo {
-  margin: 0px 0 0px 80px; 
-  font-family: 'Tangerine';
+    margin: 0px 0 0px 80px; 
+    font-family: 'Tangerine';
 }
-
+  
 .logo a {
-  text-decoration: none;
-  font-size: 46px;
-  font-weight: bold;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bold;
+    color: #f9ca24;
+}
+
+.splash .navigation {
+    width: 100%;
+    margin-left: 115px;
+    margin-right: 115px;
+    align-items: flex-start;
 }
 
 .navigation .container {
-  display: flex;
-  justify-content: space-between;
-  flex: 0 50%;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 50%;
 }
-
+  
 .navigation ul {
-  margin-right: 34px;
-  margin-left: 34px;
-  padding:0;
+    margin-right: 34px;
+    margin-left: 34px;
+    padding:0;
 }
-
+  
 .navigation ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 38px;
-  margin-top: 10px;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 38px;
+    margin-top: 10px;
 }
-
+  
 .navigation ul li a  {
-  text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* NAVIGATION 
-.logo {
-  margin: 16px 0 16px 0; 
+/* HEADER */
+.splash {
+    max-width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    flex-direction: column;
+    background: url("https://i.postimg.cc/pVBxBSv3/grayscale-photography-of-sea-3560136.jpg");
+    background-size: cover; 
 }
 
-.navigation .container {
-  display: flex;
-  padding: 0;
-  margin: 30px auto 30px auto;
-  justify-content: space-between;
+.splash-title {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0%, 50%);
+    color: white;
 }
 
-.navigation .container ul {
-  display: flex;
+.splash-title a {
+    font-style: italic;
+    font-size: 44px;
 }
 
-.navigation ul li {
-  display: inline-block;
+.splash-title span {
+    font-size: 72px;
+    font-weight: bold;
 }
 
-.navigation ul li a, .logo a {
-  text-decoration: none;
+.buttone-one {
+    background: #f9ca24;
+    padding: 25px 55px 25px 55px;
+    border-radius: 5%;
+    border: 1px black;
+    margin-top: 15px;
 }
 
-.navigation ul li ul {
-  flex-direction: column;
-  padding: 0;
+.buttone-one a {
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
-
-.navigation .container ul li ul {
- display: none;
- position: absolute;
- padding-top: 10px;
-}
-
-.navigation .container ul li {
-  margin-right: 26px;
-}
-
-.navigation .container li:hover ul {
-  display: flex;    
-}
-*/
