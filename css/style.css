@@ -16,6 +16,11 @@ body {
     margin-top: 24px;
     margin-bottom: 24px;
 }
+
+h3 {
+    font-family: 'Roboto';
+    margin-bottom: 0px;
+}
   
 /* NAVIGATION */
 .logo {
@@ -107,3 +112,74 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* SERVICES */
+.services {
+    padding: 48px;
+    display: flex;
+    margin-left: 250px;
+    margin-right: 250px;
+    background: white;
+    height: 575px;
+    flex-direction: column;
+}
+
+.services-description {
+    text-align: center;
+    margin: 60px;
+    line-height: 1.4;
+}
+
+.services-description a {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.services-description span {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.services-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 60px 60px 60px;
+  text-align: center;
+}
+
+.box1, .box2, .box3 {
+    flex: 0 0 33.333%;
+    line-height: 1.5;
+}
+
+.box2 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.box1 {
+    padding-right: 30px;
+}
+
+.box3 {
+    padding-left: 30px;
+}
+
+i {
+    font-size: 35px;
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    color: #f9ca24;
+    border-radius: 50%;
+    border: 3px solid #f9ca24;
+}
+
+i::before {
+    line-height: 70px; 
+}
+
+.box1 p, .box2 p, .box3 p  {
+    margin-top: 0px;
+}
+
