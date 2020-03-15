@@ -158,11 +158,11 @@ h3 {
 }
 
 .box1 {
-    padding-right: 30px;
+   /* padding-right: 30px; */
 }
 
 .box3 {
-    padding-left: 30px;
+   /* padding-left: 30px; */
 }
 
 i {
@@ -183,3 +183,74 @@ i::before {
     margin-top: 0px;
 }
 
+/* PORTFOLIO */
+.portfolio {
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 1210px;
+    background: #ecf0f1;
+    flex-direction: row;
+    padding: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin: 60px;
+    line-height: 1.4;
+}
+
+.portfolio-title a {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.portfolio-title span {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.portfolio-box {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-box img {
+    max-width: 300px;
+    height: 300px; 
+}
+
+.image-description {
+    display: flex;
+    background: #fff;
+    height: 90px;
+    margin-bottom: 60px;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0.7;
+}
+
+.portfolio-box-box {
+    display: flex;
+    flex: 0 0 33.333%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-box-box .image {
+    max-height: 300px;
+}
+
+.image-description a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image-description span {
+    font-size: 16px;
+    font-style: italic;
+}
