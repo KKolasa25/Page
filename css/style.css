@@ -165,7 +165,7 @@ h3 {
    /* padding-left: 30px; */
 }
 
-i {
+.services-icons i {
     font-size: 35px;
     background: #fff;
     width: 70px;
@@ -175,7 +175,7 @@ i {
     border: 3px solid #f9ca24;
 }
 
-i::before {
+.services-icons i::before {
     line-height: 70px; 
 }
 
@@ -254,3 +254,64 @@ i::before {
     font-size: 16px;
     font-style: italic;
 }
+
+/* FOOTER */ 
+footer ul li i {
+    font-size: 20px;
+    background: #2d3436;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+footer {
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex; 
+    flex-direction: row;
+    max-width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    position: relative;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+footer li {
+    font-size: 0;   
+}
+
+footer i:before {
+    line-height: 40px;  
+}
+
+footer a {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+footer .footer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
