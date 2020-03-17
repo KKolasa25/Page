@@ -54,13 +54,17 @@ a {
   width: 100%;
   margin-left: 115px;
   margin-right: 115px;
-  align-items: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .navigation .container {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex: 0 50%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex: 0 50%;
+      flex: 0 50%;
 }
 
 .navigation ul {
@@ -85,9 +89,12 @@ a {
 .splash {
   max-width: 100%;
   height: 700px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background: url("https://i.postimg.cc/pVBxBSv3/grayscale-photography-of-sea-3560136.jpg");
   background-size: cover;
 }
@@ -127,10 +134,12 @@ a {
 /* SERVICES */
 .services {
   padding: 48px;
+  display: -ms-flexbox;
   display: flex;
   background: white;
   height: 100%;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .services-description {
@@ -150,8 +159,10 @@ a {
 }
 
 .services-icons {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   text-align: center;
   margin-right: 150px;
   margin-left: 150px;
@@ -160,7 +171,8 @@ a {
 .box1,
 .box2,
 .box3 {
-  flex: 0 0 33.333%;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
   line-height: 1.5;
   padding-left: 50px;
   padding-right: 50px;
@@ -191,10 +203,13 @@ a {
 .portfolio {
   height: 100%;
   background: #ecf0f1;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   padding: 48px 48px 0 48px;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .portfolio-title {
@@ -214,10 +229,13 @@ a {
 }
 
 .portfolio-box {
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 150px;
   margin-right: 150px;
   max-width: 100%;
@@ -229,23 +247,32 @@ a {
 }
 
 .image-description {
+  display: -ms-flexbox;
   display: flex;
   background: #fff;
   height: 90px;
   margin-bottom: 60px;
   width: 300px;
-  justify-content: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   line-height: 0.7;
 }
 
 .portfolio-box-box {
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 0 33.333%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .portfolio-box-box .image {
@@ -273,8 +300,10 @@ footer ul li i {
 }
 
 footer ul {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 0;
   position: absolute;
   left: 50%;
@@ -284,8 +313,10 @@ footer ul {
 footer {
   padding-right: 48px;
   padding-left: 48px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 footer ul li {
@@ -309,6 +340,7 @@ footer a {
 }
 
 .footer-description {
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -317,11 +349,13 @@ footer a {
 }
 
 .footer-container {
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-left: 150px;
   margin-right: 150px;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   position: relative;
 }
 
@@ -330,17 +364,15 @@ footer a {
   .splash-title h1 {
     font-size: 26px;
   }
-
   .logo {
     margin: 0;
-    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
     text-align: center;
   }
-
   .logo a {
     font-size: 68px;
   }
-
   .splash .navigation,
   .navigation ul,
   .splash,
@@ -351,33 +383,29 @@ footer a {
   footer {
     margin: 0;
   }
-
   .navigation .container {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
-
   .navigation ul li {
     list-style-type: none;
     display: inline-block;
     margin-right: 3px;
     margin-top: 10px;
   }
-
   .navigation ul {
     margin: 0;
-    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
     text-align: center;
   }
-
   .splash-title a {
     font-style: italic;
     font-size: 24px;
   }
-
   .splash-title span {
     font-size: 22px;
   }
-
   .buttone-one {
     background: #f9ca24;
     padding: 25px 55px 25px 55px;
@@ -389,65 +417,57 @@ footer a {
     font-size: 16px;
     font-weight: bold;
   }
-
   .services-icons {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
-
   .services {
     height: 100%;
   }
-
   .services-description {
     margin: 0 0 38px 0;
   }
-
   .box1,
   .box2,
   .box3 {
     margin-bottom: 10px;
   }
-
   .portfolio {
     height: 100%;
   }
-
   .services-description h2,
   .portfolio-title h2 {
     font-size: 32px;
   }
-
   .portfolio-box {
     margin-left: 0;
     margin-right: 0;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-
   .portfolio-title {
     margin: 0;
     margin-bottom: 38px;
   }
-
   footer ul {
     margin-left: 0;
     padding: 0;
   }
-
   footer ul li {
     margin-right: 2px;
   }
-
   .footer-container {
-    flex-direction: column-reverse;
-    align-items: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
   }
-
   .footer-description {
     display: block;
     margin: 16px 0 16px 0;
   }
-
   .footer-description a {
     font-size: 12px;
   }
@@ -458,26 +478,23 @@ footer a {
   .footer-container {
     margin: 0;
   }
-
   footer ul {
     margin-left: 0;
     padding: 0;
   }
-
   footer ul li {
     margin-right: 2px;
   }
-
   .footer-container {
-    flex-direction: column-reverse;
-    align-items: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
   }
-
   .footer-description {
     display: block;
     margin: 16px 0 16px 0;
   }
-
   .footer-description a {
     font-size: 12px;
   }
@@ -500,3 +517,4 @@ footer a {
     margin-left: 200px;
   }
 }
+/*# sourceMappingURL=style.css.map */
