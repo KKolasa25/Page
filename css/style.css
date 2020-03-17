@@ -17,6 +17,10 @@ body {
     margin-bottom: 24px;
 }
 
+p {
+    font-family: 'Roboto'; 
+}
+
 h3 {
     font-family: 'Roboto';
     margin-bottom: 0px;
@@ -73,11 +77,11 @@ h3 {
     height: 700px;
     display: flex;
     align-items: center;
-    margin-left: 250px;
-    margin-right: 250px;
     flex-direction: column;
     background: url("https://i.postimg.cc/pVBxBSv3/grayscale-photography-of-sea-3560136.jpg");
     background-size: cover; 
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .splash-title {
@@ -141,28 +145,22 @@ h3 {
 }
 
 .services-icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 60px 60px 60px;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .box1, .box2, .box3 {
     flex: 0 0 33.333%;
     line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.box2 {
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.box1 {
-   /* padding-right: 30px; */
-}
-
-.box3 {
-   /* padding-left: 30px; */
+.box1 p, .box2 p, .box3 p {
+    font-size: 14px;
 }
 
 .services-icons i {
@@ -185,14 +183,14 @@ h3 {
 
 /* PORTFOLIO */
 .portfolio {
-    margin-left: 250px;
-    margin-right: 250px;
     height: 1210px;
     background: #ecf0f1;
     flex-direction: row;
     padding: 48px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .portfolio-title {
@@ -204,11 +202,13 @@ h3 {
 .portfolio-title a {
     font-size: 40px;
     font-weight: bold;
+    
 }
 
 .portfolio-title span {
     font-size: 20px;
     font-style: italic;
+    
 }
 
 .portfolio-box {
@@ -216,6 +216,9 @@ h3 {
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width:100%;
 }
 
 .portfolio-box img {
@@ -267,24 +270,16 @@ footer ul li i {
 
 footer ul {
     display: flex;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0%);
+    align-items: center;
+    margin-left: 120px;
 }
 
 footer {
     margin-left: 250px;
     margin-right: 250px;
-    display: flex; 
-    flex-direction: row;
-    max-width: 100%;
-    padding-left: 48px;
     padding-right: 48px;
-    position: relative;
+    padding-left: 48px;
+    display: flex;
 }
 
 footer ul li {
@@ -307,11 +302,18 @@ footer a {
     margin-top: 40px;
 }
 
-footer .footer-description {
+.footer-description {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+.footer-description a {
+    font-family: 'Roboto'; 
+    font-size: 14px;
+}
 
-
+.footer-container {
+    display: flex;
+    width: 100%;
+    margin-left: 170px;
+    margin-right: 150px;
+}
