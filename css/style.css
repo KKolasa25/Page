@@ -24,8 +24,13 @@ p {
 h3 {
     font-family: 'Roboto';
     margin-bottom: 0px;
+    margin: 0;
 }
   
+h2 {
+    margin:0;
+}
+
 /* NAVIGATION */
 .logo {
     margin: 0px 0 0px 80px; 
@@ -80,8 +85,6 @@ h3 {
     flex-direction: column;
     background: url("https://i.postimg.cc/pVBxBSv3/grayscale-photography-of-sea-3560136.jpg");
     background-size: cover; 
-    margin-left: 250px;
-    margin-right: 250px;
 }
 
 .splash-title {
@@ -92,13 +95,15 @@ h3 {
     color: white;
 }
 
-.splash-title a {
+.splash-title h1 {
     font-style: italic;
-    font-size: 44px;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
 }
 
 .splash-title span {
-    font-size: 72px;
+    font-size: 56px;
     font-weight: bold;
 }
 
@@ -121,10 +126,8 @@ h3 {
 .services {
     padding: 48px;
     display: flex;
-    margin-left: 250px;
-    margin-right: 250px;
     background: white;
-    height: 575px;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -134,7 +137,7 @@ h3 {
     line-height: 1.4;
 }
 
-.services-description a {
+.services-description h2 {
     font-size: 40px;
     font-weight: bold;
 }
@@ -146,7 +149,7 @@ h3 {
 
 .services-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     margin-right: 150px;
     margin-left: 150px;
@@ -155,8 +158,8 @@ h3 {
 .box1, .box2, .box3 {
     flex: 0 0 33.333%;
     line-height: 1.5;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .box1 p, .box2 p, .box3 p {
@@ -183,14 +186,12 @@ h3 {
 
 /* PORTFOLIO */
 .portfolio {
-    height: 1210px;
+    height: 100%;
     background: #ecf0f1;
     flex-direction: row;
-    padding: 48px;
+    padding: 48px 48px 0 48px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 250px;
-    margin-right: 250px;
 }
 
 .portfolio-title {
@@ -199,7 +200,7 @@ h3 {
     line-height: 1.4;
 }
 
-.portfolio-title a {
+.portfolio-title h2 {
     font-size: 40px;
     font-weight: bold;
     
@@ -215,7 +216,7 @@ h3 {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 150px;
     margin-right: 150px;
     max-width:100%;
@@ -242,13 +243,15 @@ h3 {
     flex: 0 0 33.333%;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .portfolio-box-box .image {
     max-height: 300px;
 }
 
-.image-description a {
+.image-description h3 {
     font-size: 18px;
     font-weight: bold;
 }
@@ -271,15 +274,19 @@ footer ul li i {
 footer ul {
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 footer {
-    margin-left: 250px;
-    margin-right: 250px;
     padding-right: 48px;
     padding-left: 48px;
     display: flex;
+    justify-content: center;
+    /*margin-left: 150px;
+    margin-right: 150px;*/
 }
 
 footer ul li {
@@ -304,16 +311,208 @@ footer a {
 
 .footer-description {
     display: flex;
+    
 }
 
 .footer-description a {
     font-family: 'Roboto'; 
     font-size: 14px;
+    
 }
 
 .footer-container {
     display: flex;
     width: 100%;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-right: 150px;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* MEDIA */
+@media (max-width: 767px) and (max-width: 991px) {
+
+.logo {
+    margin: 0;
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.logo a {
+    font-size: 68px;
+}
+
+.splash .navigation {
+    margin: 0;
+}
+
+.navigation ul {
+    margin: 0;
+}
+
+.navigation .container {
+    flex-direction: column;
+}
+
+
+.navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.navigation ul {
+    margin: 0;
+    flex: 0 0 50%;
+    text-align: center;
+    }
+
+.splash, .services, .services-icons, .portfolio {
+    margin: 0;
+}
+
+.splash-title a {
+    font-style: italic;
+    font-size: 28px;
+}
+
+.splash-title span {
+    font-size: 25px;
+}
+
+.buttone-one {
+    background: #f9ca24;
+    padding: 25px 55px 25px 55px;
+    border-radius: 5%;
+    border: 1px black;
+    margin-top: 15px;
+}
+
+.buttone-one a {
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.services-icons {
+    flex-direction: column;
+}
+
+.services {
+    height: 100%;
+}
+
+.services-description {
+    margin: 0 0 38px 0;
+}
+
+.box1, .box2, .box3 {
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    height: 100%;
+}
+
+.services-description h2, .portfolio-title h2 {
+    font-size: 32px;
+}
+
+.portfolio-box {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-title {
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+footer {
+    margin: 0;
+}
+
+.footer-container {
+    margin: 0;
+}
+
+footer ul {
+    margin-left: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-right: 2px;
+}
+
+.footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footer-description {
+    display: block;
+    margin: 16px 0 16px 0;
+}
+
+.footer-description a {
+    font-size: 12px;
+}
+}
+
+@media (max-width: 1280px) {
+
+footer {
+    margin: 0;
+}
+    
+.footer-container {
+    margin: 0;
+}
+    
+footer ul {
+    margin-left: 0;
+    padding: 0;
+}
+    
+footer ul li {
+    margin-right: 2px;
+}
+    
+.footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+    
+.footer-description {
+    display: block;
+    margin: 16px 0 16px 0;
+}
+    
+.footer-description a {
+        font-size: 12px;
+}
+}
+
+@media (min-width: 1281px)  {
+       .footer-description {
+           margin-left: 25px;
+       }
+}
+
+@media (min-width : 1920px) and (max-width: 2303px) {
+    .footer-description {
+        margin-left: 100px;
+       }
+}
+
+
+@media (min-width : 2304px) {
+    .footer-description {
+        margin-left: 200px;
+       }
 }
