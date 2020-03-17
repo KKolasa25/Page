@@ -85,6 +85,10 @@ a {
   color: white;
 }
 
+.navigation ul li a:hover {
+  color: #f9ca24;
+}
+
 /* HEADER */
 .splash {
   max-width: 100%;
@@ -129,11 +133,17 @@ a {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  transition: all 0.5s;
+}
+
+.buttone-one:hover {
+  color: #f9ca24;
+  background: #fff;
 }
 
 /* SERVICES */
 .services {
-  padding: 48px;
+  padding: 48px 48px 96px 48px;
   display: -ms-flexbox;
   display: flex;
   background: white;
@@ -205,7 +215,7 @@ a {
   background: #ecf0f1;
   -ms-flex-direction: row;
       flex-direction: row;
-  padding: 48px 48px 0 48px;
+  padding: 48px 48px 48px 48px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
@@ -242,8 +252,8 @@ a {
 }
 
 .portfolio-box img {
-  max-width: 300px;
   height: 300px;
+  object-fit: cover;
 }
 
 .image-description {
@@ -252,7 +262,7 @@ a {
   background: #fff;
   height: 90px;
   margin-bottom: 60px;
-  width: 300px;
+  width: 100%;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-direction: column;
@@ -263,8 +273,8 @@ a {
 .portfolio-box-box {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
+  -ms-flex: 0 0 25.333%;
+      flex: 0 0 25.333%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
@@ -305,9 +315,8 @@ footer ul {
   -ms-flex-align: center;
       align-items: center;
   padding: 0;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
 }
 
 footer {
@@ -342,6 +351,8 @@ footer a {
 .footer-description {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .footer-description a {
@@ -423,6 +434,7 @@ footer a {
   }
   .services {
     height: 100%;
+    padding: 48px 48px 48px 48px;
   }
   .services-description {
     margin: 0 0 38px 0;
@@ -439,6 +451,9 @@ footer a {
   .portfolio-title h2 {
     font-size: 32px;
   }
+  .portfolio-box img {
+    height: 200px;
+  }
   .portfolio-box {
     margin-left: 0;
     margin-right: 0;
@@ -454,6 +469,7 @@ footer a {
   footer ul {
     margin-left: 0;
     padding: 0;
+    margin-bottom: 0px;
   }
   footer ul li {
     margin-right: 2px;
@@ -481,6 +497,7 @@ footer a {
   footer ul {
     margin-left: 0;
     padding: 0;
+    margin-bottom: 0px;
   }
   footer ul li {
     margin-right: 2px;
@@ -493,7 +510,7 @@ footer a {
   }
   .footer-description {
     display: block;
-    margin: 16px 0 16px 0;
+    margin: 0px 0 16px 0;
   }
   .footer-description a {
     font-size: 12px;
@@ -502,19 +519,22 @@ footer a {
 
 @media (min-width: 1281px) {
   .footer-description {
-    margin-left: 25px;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1920px) and (max-width: 2303px) {
   .footer-description {
-    margin-left: 100px;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 2304px) {
   .footer-description {
-    margin-left: 200px;
+    margin-left: 150px;
+  }
+  .image-description {
+    width: 83%;
   }
 }
 /*# sourceMappingURL=style.css.map */
