@@ -233,20 +233,22 @@ a {
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 150px;
-  margin-right: 150px;
-  max-width: 100%;
+ /* margin-left: 150px;
+  margin-right: 150px;*/
+  margin: 0 auto;
+  /*max-width: 100%;*/
 }
 
 .portfolio-box img {
   height: 300px;
   object-fit: cover;
+  width: 100%;
 }
 
 .image-description {
   display: flex;
   background: #fff;
-  height: 90px;
+  padding: 20px 10px 20px 10px;
   margin-bottom: 60px;
   width: 100%;
   justify-content: center;
@@ -256,12 +258,14 @@ a {
 
 .portfolio-box-box {
   display: flex;
-  flex: 0 0 25.333%;
+  flex: 0 0 33.333%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 10px 0 10px;
 }
+
 
 .portfolio-box-box .image {
   max-height: 300px;
@@ -291,14 +295,15 @@ footer ul {
   display: flex;
   align-items: center;
   padding: 0;
-  flex-basis: 75%;
+
+
 }
 
 footer {
   padding-right: 48px;
   padding-left: 48px;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 footer ul li {
@@ -323,7 +328,7 @@ footer a {
 
 .footer-description {
   display: flex;
-  flex-basis: 50%;
+  /*flex-basis: 50%;*/
 }
 
 .footer-description a {
@@ -333,10 +338,11 @@ footer a {
 .footer-container {
   display: flex;
   width: 100%;
-  margin-left: 150px;
-  margin-right: 150px;
-  justify-content: space-between;
+  /*margin-left: 150px;
+  margin-right: 150px;*/
+  /*justify-content: space-between;*/
   position: relative;
+  /*flex-wrap: wrap;*/
 }
 
 /* MEDIA */
@@ -443,6 +449,9 @@ footer a {
     justify-content: space-around;
   }
 
+  .portfolio-box-box {
+    flex: 1;
+
   .portfolio-title {
     margin: 0;
     margin-bottom: 38px;
@@ -506,7 +515,7 @@ footer a {
 
 @media (min-width: 1281px) {
   .footer-description {
-    margin-left: 30px;
+    /*margin-left: 30px;*/
   }
 }
 
@@ -522,6 +531,6 @@ footer a {
   }
 
   .image-description {
-    width: 83%;
+    /*width: 83%;*/
   }
 }
